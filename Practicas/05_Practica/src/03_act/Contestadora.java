@@ -5,14 +5,14 @@
  */
 public class Contestadora {
 	
-	private Mensaje[] mensaje;	
+	Mensaje[] mensaje;	
 	//Estructura de la contestadora
     	
 	/**
 	* Constructor de una contestadora con capacidad para 10 mensajes
 	*/
 	public Contestadora() {
-		Mensaje[] mensaje = new Mensaje[10];		
+		mensaje = new Mensaje[10];		
 	}
 
 	/**
@@ -20,7 +20,7 @@ public class Contestadora {
 	 * @param n - capacidad de la contestadora
 	*/
 	public Contestadora(int n) {
-		Mensaje[] mensaje = new Mensaje[n];
+		mensaje = new Mensaje[n];
 	}
 
 	/**
@@ -30,7 +30,9 @@ public class Contestadora {
 	public void agregarMensaje(Mensaje nuevoMensaje){
 		for(int i=0; i < mensaje.length; i++) {
 			if(mensaje[i].fueEscuchado() == true) { 
-				mensaje[i] = null;
+				mensaje[i] = nuevoMensaje;
+			} else if(mensaje[i] == null) {
+				mensaje[i] = nuevoMensaje;
 			} else if(mensaje[i] != null) {
 				System.out.println("La Contestadora esta llena!");
 			}		

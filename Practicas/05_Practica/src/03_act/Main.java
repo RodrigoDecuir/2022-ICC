@@ -11,7 +11,7 @@ public class Main {
 		
 		Scanner entrada = new Scanner(System.in);
 		Contestadora contestadora = new Contestadora();	
-
+		
 		int valor = 0;
 
 		while(valor != 4) {
@@ -25,7 +25,8 @@ public class Main {
 
 			switch(valor) {
 				case 1:
-					contestadora.agregarMensaje();
+					Mensaje msj = new Mensaje(entrada.nextLine());
+					contestadora.agregarMensaje(msj);
 					break;
 				case 2:
 					contestadora.escucharMensajeReciente();

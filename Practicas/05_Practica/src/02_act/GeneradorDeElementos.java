@@ -1,5 +1,5 @@
 /**
- * Clase para generar un arreglo 'A' de 10 enteros aleatorio
+ * Clase para generar un arreglo 'A' de 10 enteros aleatorios
  * y un sub arreglo de 'A' sin elementos repetidos 
  * @author Rodrigo Andre Decuir Fuentes
  * @version 1.0
@@ -15,9 +15,9 @@ public class GeneradorDeElementos {
 		//Escribe un programa que trabaje con un arreglo A de enteros de longitud 10
 		//Cada elemento en A está en el rango de 1 a 10
 		int[] A = new int[10];
-		int[] B = new int[10];
 		Random in = new Random();
-	
+
+
 		//Genera aleatoriamente un valor de 1 a 10 en 
 		//cada posicion de A e imprimelo en pantalla.		
 		System.out.println("Arreglo generado: ");
@@ -26,32 +26,29 @@ public class GeneradorDeElementos {
 			System.out.print(A[i] + " | ");
 		}
 
-		//Genera un sub arreglo de A sin elementos repetidos			
-		System.out.println("\nSub arreglo sin duplicados: ");
-		for(int i=0; i<A.length-1; i++) {
-			for(int j=i+1; j<A.length; j++) {
-				if((i != j) && (A[i] == A[j])) {//si hay un duplicado imprimelo
-					B[i] = A[j];
-					System.out.print(B[i] + " | ");
-				} 
-				
-				
-				/*else if ((i != j) && (A[i] != A[j])) {
-					System.out.print(A[j] + " | ");	
-				}*/
-			/*	if((i != j) && (A[i] == A[j])) {
-					A[i] = 22;
-				}
-			
-				if((i != j) && (A[i] != A[j])){
-					B[i] = A[i+1];
-					System.out.print(B[i] + " | ");
-				}  
-			*/
-			}
+
+		//Ordenar los elementos del arreglo de forma ascendente o descendente (opcional)
+		System.out.println("\nArreglo ordenado: ");	
+		Arrays.sort(A);
+		for(int i=0; i < A.length; i++) {
+			System.out.print(A[i] + " | ");
 		}
+
+
+		//Genera un sub arreglo de A sin elementos repetidos			
+		System.out.println("\nSub arreglo sin duplicados: ");	
+	      	int[] B =  new int[10];
+		int temp=0;	
+		for(int i=0; i < A.length - 1; i++) {
+            		if (A[i] != A[i + 1]) {
+                		B[temp++] = A[i];
+            		}
+        	}
+
+        	B[temp++] = A[A.length - 1];
+
+       		for (int j=0; j < temp; j++) {
+           		System.out.print(B[j] + " | ");
+        	}	
 	}
-}
-
-
-
+}	

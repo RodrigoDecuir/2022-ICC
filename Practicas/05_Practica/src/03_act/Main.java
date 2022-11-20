@@ -1,5 +1,5 @@
 /**
- * Clase para...
+ * Clase para 
  * @author Rodrigo Andre Decuir Fuentes
  * @version 1.0
  */
@@ -10,11 +10,12 @@ public class Main {
 	public static void main(String[]args) {
 		
 		Scanner entrada = new Scanner(System.in);
-		Contestadora contestadora = new Contestadora();	
-		
+		Contestadora c = new Contestadora();	
+
 		int valor = 0;
 
 		while(valor != 4) {
+
 			System.out.println("Contestadora");
 			System.out.println("1. Agregar mensaje");
 			System.out.println("2. Revisar mensaje reciente");
@@ -22,17 +23,22 @@ public class Main {
 			System.out.println("4. Salir");
 			
 			valor = entrada.nextInt();
+			
+			System.out.println("");
+			Mensaje msj = new Mensaje(entrada.nextLine());
 
 			switch(valor) {
 				case 1:
-					Mensaje msj = new Mensaje(entrada.nextLine());
-					contestadora.agregarMensaje(msj);
+					System.out.println("Introduce mensaje -->");
+					msj = new Mensaje(entrada.nextLine());
+					c.agregarMensaje(msj);
+					System.out.println("");
 					break;
 				case 2:
-					contestadora.escucharMensajeReciente();
+					c.escucharMensajeReciente();
 					break;
 				case 3:
-					contestadora.escucharMensajes();
+					c.escucharMensajes();
 					break;
 				case 4:
 					System.exit(0);
@@ -40,11 +46,10 @@ public class Main {
 				default:
 					System.out.println("Opcion invalida");
 					break;
-
 			}
 
 		}
 
-	}
+	}//fin del main
 
-}
+}//fin de clase

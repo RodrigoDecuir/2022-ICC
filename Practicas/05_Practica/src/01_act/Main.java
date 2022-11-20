@@ -53,7 +53,8 @@ public class Main {
 			} else if(b > 0.8 && b < 1.0) { 
 				carrilLiebre[l.pequenioResbalon()] = "liebre";
 			}
-
+			
+			//Casos de victoria
 			if((carrilLiebre[70] == "liebre") && (carrilTortuga[70] == "tortuga")) {
 				System.out.println("---------------> 🐇");
 				System.out.println("---------------> 🐢");

@@ -1,5 +1,5 @@
 /**
- * Clase para ...
+ * Clase para almacenar y manejar mensajes.
  * @author Rodrigo Andre Decuir Fuentes
  * @version 1.0
  */
@@ -52,10 +52,9 @@ public class Contestadora {
 
 		System.out.println("");
 		//prueba para ver que tiene la contestadora	
-		for(int i=1; i < mensaje.length; i++) {
-			System.out.println(mensaje[i]); 
-		}	
-	
+	//	for(int i=0; i < mensaje.length; i++) {
+	//		System.out.println(mensaje[i]); 
+	//	}	
 	}
    
 

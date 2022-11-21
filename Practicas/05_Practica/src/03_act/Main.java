@@ -1,5 +1,5 @@
 /**
- * Clase para 
+ * Clase para ejecutar los metodos programados en la contestadora. 
  * @author Rodrigo Andre Decuir Fuentes
  * @version 1.0
  */

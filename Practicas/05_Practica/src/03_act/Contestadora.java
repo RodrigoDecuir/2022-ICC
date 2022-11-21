@@ -32,14 +32,14 @@ public class Contestadora {
 	public void agregarMensaje(Mensaje nuevoMensaje){
 		int contador = 0;
 	
-		for(int i=0; i < mensaje.length; i++) {
+		for(int i=1; i < mensaje.length; i++) {
 			if((mensaje[i]==null) || (mensaje[i].fueEscuchado()==true))  { 
 				mensaje[i] = nuevoMensaje;
 				break;
 			}
 		}
 		
-		for(int i=0; i < mensaje.length; i++) {
+		for(int i=1; i < mensaje.length; i++) {
 			if(mensaje[i] != null) {
 				contador++;
 			}
@@ -49,12 +49,6 @@ public class Contestadora {
 			System.out.println("La Contestadora esta llena!");
 		}
 
-
-		System.out.println("");
-		//prueba para ver que tiene la contestadora	
-	//	for(int i=0; i < mensaje.length; i++) {
-	//		System.out.println(mensaje[i]); 
-	//	}	
 	}
    
 
@@ -63,13 +57,17 @@ public class Contestadora {
 	*/
 	public void escucharMensajeReciente(){
 		int mensajeReciente = 1;
-		for(int i=0; i < mensaje.length; i++) {
-			if((mensajeReciente == 1) && (mensaje[i].fueEscuchado() == false)) {
-				mensaje[i].escucha();
-				mensajeReciente++;
-			} else if(mensaje[i].fueEscuchado() == false) {
-				System.out.println("No hay mensajes sin escuchar");
-				break;
+		for(int i = mensaje.length-1; i >= 0; i--) {
+			if(mensaje[i] != null) {
+				if((mensajeReciente == 1) && (mensaje[i].fueEscuchado() == false)) {
+					System.out.print("Mensaje mas reciente--> ");	
+					System.out.println(mensaje[i].escucha());
+					mensajeReciente++;
+					break;
+				} else if(mensaje[i].fueEscuchado() == false) {
+					System.out.println("No hay mensajes sin escuchar");
+					break;
+				}
 			}	
 		}	 
 	}
@@ -80,16 +78,16 @@ public class Contestadora {
 	*/
 	public void escucharMensajes(){
 		int mensajesLeidos = 0;
-		for(int i=0; i < mensaje.length; i++) {
-			if((mensaje[i] != null) && mensaje[i].fueEscuchado() == false) {
-				mensaje[i].escucha();
+		for(int i=1; i < mensaje.length; i++) {
+			if((mensaje[i] != null) && (mensaje[i].fueEscuchado() == false)) {
+				System.out.print("Mensaje " + i + ": ");	
+				System.out.println(mensaje[i].escucha());
 				mensajesLeidos++;
 			}	
 		}	
 
 		if(mensajesLeidos > 0) {	
 			System.out.println(mensajesLeidos + " mensaje(s) escuchados");
-			System.out.println("");
 		} else if(mensajesLeidos == 0) {
 			System.out.println("No hay mensaje(s)");
 			System.out.println("");

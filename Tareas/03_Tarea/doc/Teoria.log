@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.8.23)  26 NOV 2022 06:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.8.23)  26 NOV 2022 10:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -568,7 +568,7 @@ l.89                 \begin{array}{ | *{12}{c |}}
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.93                 \end{array}
+l.94                 \end{array}
                                 
 ? 
 
@@ -578,13 +578,33 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95         \newline
+l.96         \newline
                       Ordena el arreglo anterior por medio de
 ? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101             \newline
+                           \textbf{Comportamiento Bubble Sort}
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
+
+ []
+
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Underfull \hbox (badness 10000) in paragraph at lines 109--111
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
 
  []
 
@@ -599,7 +619,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133             \newline
+l.134             \newline
                            ¿Qué hacen mist y mistR?
 ? 
 
@@ -609,7 +629,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.138             \newline
+l.139             \newline
                            ¿Cuál de las dos versiones es mejor y por qué?
 ? 
 
@@ -619,13 +639,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140             \newline
-                                La mejor versión es \textbf{mist }, ya que...
+l.141             \newline
+                           La mejor versión es \textbf{mist }, ya que...
 ? 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 151.
+(Font)              <8> on input line 152.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 151.
+(Font)              <6> on input line 152.
 [2]
 
 ! LaTeX Error: There's no line here to end.
@@ -634,7 +654,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.168         \newline
+l.169         \newline
                        ¿Cuál es la complejidad de mist y mistR? Justifica ...
 
 ? 
@@ -645,7 +665,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.173         \newline
+l.174         \newline
                        ¿Cuál método utiliza la regla de suma y cuál la r...
 
 ? 
@@ -656,11 +676,11 @@ LaTeX Info: Redefining \% on input line 5.
 Here is how much of TeX's memory you used:
  15391 strings out of 478855
  302672 string characters out of 5858635
- 1059012 words of memory out of 6000000
+ 1059524 words of memory out of 6000000
  32779 multiletter control sequences out of 15000+600000
  408014 words of font info for 43 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 100i,7n,104p,415b,1758s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 100i,7n,104p,415b,1819s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/te
@@ -668,7 +688,7 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on Teoria.pdf (3 pages, 563155 bytes).
+Output written on Teoria.pdf (3 pages, 563252 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream

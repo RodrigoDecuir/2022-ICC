@@ -91,7 +91,6 @@ public class Libro {
     public void asignarFechaDePublicacion(int fechaDePublicacion) {
         this.fechaDePublicacion = fechaDePublicacion; 
     }
-
     /*toString*/
     /**
      * Metodo que devuelve la informacion de un libro.

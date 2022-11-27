@@ -42,7 +42,6 @@
 \lstset{style=mystyle}
 
 \begin{document}
-
 %%%%%% ENCABEZADO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{minipage}[t]{0.165 \textwidth}
        \begin{flushright}
@@ -75,7 +74,6 @@
     \draw[thick] (-6.5,0)--(11.2,0);
 \end{tikzpicture}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section*{Teoría}
 \subsection*{Responde las siguientes preguntas:}
     \begin{enumerate}
@@ -86,22 +84,100 @@
             \end{itemize}
         \item \textbf{Se tiene el siguiente arreglo:}
             \begin{center}
-                \begin{array}{ | *{12}{c |}}
+                \begin{array}{ | *{10}{c |}}
                     \hline
                     2 & 35 & -22 & 0 & 56 & 78 & -84 & 8 & 43 & 1 \\
-
                     \hline
                 \end{array}
             \end{center}
-        \newline Ordena el arreglo anterior por medio de
-		\begin{itemize}
-			\item Bubble Sort
-            \item Selection Sort
-		\end{itemize}
-            \newline \textbf{Comportamiento Bubble Sort:}
-            \newline
-            \newline \textbf{Comportamiento Selection Sort:}
-            \newline 
+            \newline Ordena el arreglo anterior por medio de Bubble Sort y Selection Sort
+            \newline \textbf{Comportamiento Bubble Sort (ejecución):}
+            \newline 1. \begin{array}{ | *{10}{c |}}
+                    \hline
+                    2 & 35 & -22 & 0 & 56 & 78 & -84 & 8 & 43 & 1 \\
+                    \hline
+            \end{array}
+            \newline 2. \begin{array}{ | *{10}{c |}}
+                    \hline
+                    2 & -22 & 0 & 35 & 56 & -84 & 8 & 43 & 1 & 78 \\
+                    \hline
+            \end{array}
+            \newline 3. \begin{array}{ | *{10}{c |}}
+                    \hline
+                    -22 & 0 & 2 & 35 & -84 & 8 & 43 & 1 & 56 & 78 \\
+                    \hline
+            \end{array}
+            \newline 4. \begin{array}{ | *{10}{c |}}
+                    \hline
+                    -22 & 0 & 2 & -84 & 8 & 35 & 1 & 43 & 56 & 78 \\
+                    \hline
+            \end{array}
+            \newline 5. \begin{array}{ | *{10}{c |}}
+                    \hline
+                    -22 & 0 & -84 & 2 & 8 & 1 & 35 & 43 & 56 & 78 \\
+                    \hline
+            \end{array}
+            \newline 6. \begin{array}{ | *{10}{c |}}
+                    \hline
+                    -22 & -84 & 0 & 2 & 1 & 8 & 35 & 43 & 56 & 78 \\
+                    \hline
+            \end{array}
+            \newline 7. \begin{array}{ | *{10}{c |}}
+                    \hline
+                    -84 & -22 & 0 & 1 & 2 & 8 & 35 & 43 & 56 & 78 \\
+                    \hline
+            \end{array}
+            \newline \textbf{Comportamiento Selection Sort (ejecución):}
+            \newline 1. \begin{array}{ | *{10}{c |}}
+                    \hline
+                     2 & 35 & -22 & 0 & 56 & 78 & -84 & 8 & 43 & 1 \\
+                    \hline
+            \end{array}
+            \newline 2. \begin{array}{ | *{10}{c |}}
+                    \hline
+                    -84 & 35 & -22 & 0 & 56 & 78 & 2 & 8 & 43 & 1 \\
+                    \hline
+            \end{array}  
+            \newline 3. \begin{array}{ | *{10}{c |}}
+                    \hline
+                    -84 & -22 & 35 & 0 & 56 & 78 & 2 & 8 & 43 & 1 \\
+                    \hline
+            \end{array}
+            \newline 4. \begin{array}{ | *{10}{c |}}
+                    \hline
+                    -84 & -22 & 0 & 35 & 56 & 78 & 2 & 8 & 43 & 1 \\
+                    \hline
+            \end{array}
+            \newline 5. \begin{array}{ | *{10}{c |}}
+                    \hline
+                    -84 & -22 & 0 & 1 & 56 & 78 & 2 & 8 & 43 & 35 \\
+                    \hline
+            \end{array}
+            \newline 6. \begin{array}{ | *{10}{c |}}
+                    \hline
+                    -84 & -22 & 0 & 1 & 2 & 78 & 56 & 8 & 43 & 35 \\
+                    \hline
+            \end{array}
+            \newline 7. \begin{array}{ | *{10}{c |}}
+                    \hline
+                    -84 & -22 & 0 & 1 & 2 & 8 & 56 & 78 & 43 & 35 \\
+                    \hline
+            \end{array}
+            \newline 8. \begin{array}{ | *{10}{c |}}
+                    \hline
+                    -84 & -22 & 0 & 1 & 2 & 8 & 35 & 78 & 43 & 56 \\
+                    \hline
+            \end{array}
+            \newline 9.   \begin{array}{ | *{10}{c |}}
+                    \hline
+                    -84 & -22 & 0 & 1 & 2 & 8 & 35 & 43 & 78 & 56 \\
+                    \hline
+            \end{array}
+            \newline 10.  \begin{array}{ | *{10}{c |}}
+                    \hline
+                    -84 & -22 & 0 & 1 & 2 & 8 & 35 & 43 & 56 & 78 \\
+                    \hline
+            \end{array}
     \item \textbf{¿Qué es la recursión y en qué se aplica? ¿Qué componentes debe tener un método recursivo?}
 		    \begin{itemize}	
              \item La recursión es la forma de expresar la solución a un problema en términos de sí mismo, es aplicada para trabajar en cosas que tienen muchas ramificaciones posibles y son demasiado complejas para un enfoque iterativo. Un buen ejemplo de esto sería buscar a través de un sistema de archivos. 
@@ -119,7 +195,6 @@
       return s ;
   }	
             \end{lstlisting}
-
             \begin{lstlisting}[language=Java, caption=mistR]
 
   public double mistR (int n) {
@@ -130,15 +205,23 @@
       } 
   }
             \end{lstlisting}
-
             \newline ¿Qué hacen mist y mistR?
             \begin{itemize}
-                \item \textbf{mist: } recibe un entero, 
-                \item \textbf{mistR: } recibe un entero, 
+                \item \textbf{mist: } recibe un entero, el cual es usado para determinar el número de veces que se va a 
+                    realizar la operación de a un número decimal con valor inicial de 0.0 asignarle el valor de ese mismo 
+                    número más 1 entre el índice de repetición. Es decir este método realiza un número determinado de veces
+                    la operación de sumarse a sí mismo con una mitad cada vez más pequeña de 1. Devuelve lo mismo que $"mistR"$.
+                \item \textbf{mistR: } recibe un entero que sirve para determinar el número de veces que se va a realizar la operación. Se tiene un caso base para detener el programa en algún momento, 
+                    en el caso de la operación, esta realiza lo mismo $"mist"$ pero de forma recursiva, es decir, 
+                    se divide entre 1 entre un número n y a esto se le suma el antecesor de $"mistR"$ usando $"mistR"$. Devuelve lo 
+                    mismo que $"mist"$.
             \end{itemize}
             \newline ¿Cuál de las dos versiones es mejor y por qué?
-               
-            \newline La mejor versión es \textbf{mist }, ya que... 
+            \newline La mejor versión es \textbf{mist}, ya que la iteración en este caso es más rápida que la recursión y dado que estamos 
+            trabajando con un double, tenemos que el resultado es cada vez más dificil de controlar, incluso si le pasamos 
+            un valor $'n'$ muy grande a ambos métodos, por poner un ejemplo 100000, el método iterativo va a terminar muy rápido, mientras
+            que el recursivo probablemente entre en $"STACKOVERFLOW"$, lo que significa que la iteración en este caso no permite manejar
+            más números que la recursión.
     \item \textbf{¿Por que es tan importante la Complejidad en Ciencias de la Computación?}
 			    \newline Es importante porque nos permite determinar la eficacia de un algoritmo. La cual se expresa en función del tamaño de la entrada.
                 Para poder representar la complejidad se hace uso de la notación O grandota la cual permite evaluar el ritmo de crecimiento
@@ -154,7 +237,6 @@
       return r ;
   }
             \end{lstlisting}
-           
             \begin{lstlisting}[language=Java, caption=mistR]
             
   public int mistR (int n)  {
@@ -165,13 +247,14 @@
       }
   }
             \end{lstlisting}
-
         \newline ¿Cuál es la complejidad de mist y mistR? Justifica tu respuesta.
         \begin{itemize}
-            \item \textbf{mist: }
-            \item \textbf{mistR: } 
+            \item \textbf{mist: $O(n)^2$}  Operación: O(1) + ( 
+            \item \textbf{mistR: $O( ) $}  Operación: ( )  
         \end{itemize}
         \newline ¿Cuál método utiliza la regla de suma y cuál la regla de la multiplicación?
+        \begin{itemize} 
+            \item $"mist"$ utiliza la regla de la suma y $"mistR"$ la regla de la multiplicación.
+        \end{itemize}
     \end{enumerate}
-
 \end{document}

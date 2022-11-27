@@ -14,7 +14,7 @@ public class Librero {
     /*acceso*/
     public static int obtenerLibrero(Libro[] librero) {
         for(int i=0; i<librero.length; i++) {
-            return librero[i];
+            return librero[i] ;
         }
     } 
     /*modificacion*/

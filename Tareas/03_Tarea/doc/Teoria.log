@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.8.23)  26 NOV 2022 10:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.8.23)  27 NOV 2022 04:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -562,13 +562,13 @@ l.82 ...n los arreglos y para qué son  ́utiles?}
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.89                 \begin{array}{ | *{12}{c |}}
+l.89                 \begin{array}{ | *{10}{c |}}
                                                  
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.94                 \end{array}
+l.93                 \end{array}
                                 
 ? 
 
@@ -578,8 +578,93 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96         \newline
-                      Ordena el arreglo anterior por medio de
+l.95             \newline
+                          Ordena el arreglo anterior por medio de Bubble Sor...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.97 ...  \newline 1. \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.101             \end{array}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.102 ... \newline 2. \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.106             \end{array}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.107 ... \newline 3. \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.111             \end{array}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.112 ... \newline 4. \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.116             \end{array}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.117 ... \newline 5. \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.121             \end{array}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.122 ... \newline 6. \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.126             \end{array}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.127 ... \newline 7. \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.131             \end{array}
+                             
 ? 
 
 ! LaTeX Error: There's no line here to end.
@@ -588,30 +673,141 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.101             \newline
-                           \textbf{Comportamiento Bubble Sort}
+l.133             \newline
+                           \textbf{Comportamiento Selection Sort (ejecución):}
+
 ? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--105
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--105
-
- []
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
-
- []
-
+! Missing $ inserted.
+<inserted text> 
+                $
+l.134 ... \newline 1. \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.138             \end{array}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.139 ... \newline 2. \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.143             \end{array}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.144 ... \newline 3. \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.148             \end{array}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.149 ... \newline 4. \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.153             \end{array}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.154 ... \newline 5. \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.158             \end{array}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.159 ... \newline 6. \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.163             \end{array}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.164 ... \newline 7. \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.168             \end{array}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.169 ... \newline 8. \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.173             \end{array}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.174 ...newline 9.   \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.178             \end{array}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.179 ...newline 10.  \begin{array}{ | *{10}{c |}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.183             \end{array}
+                             
+? 
 [1
 
 {/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./EscudoUNAM
 .png> <./Fciencias_UNAM.png>]
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
+
+ []
+
 
 ! LaTeX Error: There's no line here to end.
 
@@ -619,7 +815,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.134             \newline
+l.213             \newline
                            ¿Qué hacen mist y mistR?
 ? 
 
@@ -629,24 +825,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139             \newline
+l.224             \newline
                            ¿Cuál de las dos versiones es mejor y por qué?
 ? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.141             \newline
-                           La mejor versión es \textbf{mist }, ya que...
-? 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 152.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 152.
 [2]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 240.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 240.
+
 
 ! LaTeX Error: There's no line here to end.
 
@@ -654,7 +841,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169         \newline
+l.257         \newline
                        ¿Cuál es la complejidad de mist y mistR? Justifica ...
 
 ? 
@@ -665,7 +852,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.174         \newline
+l.262         \newline
                        ¿Cuál método utiliza la regla de suma y cuál la r...
 
 ? 
@@ -674,24 +861,27 @@ LaTeX Info: Redefining \. on input line 5.
 LaTeX Info: Redefining \% on input line 5.
 ) ) 
 Here is how much of TeX's memory you used:
- 15391 strings out of 478855
- 302672 string characters out of 5858635
- 1059524 words of memory out of 6000000
- 32779 multiletter control sequences out of 15000+600000
+ 15392 strings out of 478855
+ 302680 string characters out of 5858635
+ 979674 words of memory out of 6000000
+ 32780 multiletter control sequences out of 15000+600000
  408014 words of font info for 43 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 100i,7n,104p,415b,1819s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 100i,7n,104p,415b,1298s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on Teoria.pdf (3 pages, 563252 bytes).
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmtt8.pfb>
+Output written on Teoria.pdf (3 pages, 593722 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 62 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

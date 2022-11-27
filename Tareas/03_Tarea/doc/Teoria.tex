@@ -249,8 +249,10 @@
             \end{lstlisting}
         \newline ¿Cuál es la complejidad de mist y mistR? Justifica tu respuesta.
         \begin{itemize}
-            \item \textbf{mist: $O(n)^2$}  Operación: O(1) + ( 
-            \item \textbf{mistR: $O( ) $}  Operación: ( )  
+            \item \textbf{mist: $O(log n)$}  Operación: O(1) + O(log n) + O(1) = O(1 + log n + 1) = O(log n)  
+                \newline Desde mi punto de vista es logaritmica porque sin importar el tamaño de la entrada no es necesario recorrer todos los elementos.
+            \item \textbf{mistR: $O(log n) $}  Operación: (O(1) * O(log n)) = O(1 log n) = O(log n)  
+                \newline También siento que tiene complejidad logarítmica, pues a pesar de ejecutar más pasos que el método iterativo, sigue siendo innecesario recorrer todos los elementos. 
         \end{itemize}
         \newline ¿Cuál método utiliza la regla de suma y cuál la regla de la multiplicación?
         \begin{itemize} 

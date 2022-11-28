@@ -31,10 +31,10 @@ public class Librero {
     public void asignarA(int i, String autor) {
         coleccion[i].asignarAutor(autor);
     }
-    public void asignarNumeroDePaginas(int i, int np) {
+    public void asignarNp(int i, int np) {
         coleccion[i].asignarNumeroDePaginas(np);
     }
-    public void asignarFechaDePublicacion(int i, int fp) {
+    public void asignarFp(int i, int fp) {
         coleccion[i].asignarFechaDePublicacion(fp);
     }
      

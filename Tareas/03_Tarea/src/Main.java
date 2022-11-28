@@ -18,7 +18,6 @@ public class Main {
         int valor = 0;
         int valor2 = 0;
 		while(valor != 10) {
-
 			System.out.println("\nLibrero");
 			System.out.println("1. Enlistar libros existentes");
 			System.out.println("2. Modificar un libro");
@@ -30,10 +29,8 @@ public class Main {
             System.out.println("8. Ordenar libros por numero de paginas");
             System.out.println("9. Ordenar libros por fecha");
             System.out.println("10. Salir");
-
 			System.out.print("Seleccione la opcion--> ");
 			valor = in.nextInt();
-
 			switch(valor) {
 				case 1:
 				    System.out.println(moderno.obtenerLibrero());	
@@ -45,30 +42,41 @@ public class Main {
                         System.out.println("3. Modificar numero de paginas");
                         System.out.println("4. Modificar la fecha");
                         System.out.println("5. Salir");
-                        System.out.println("Seleccione la opcion--> ");
+                        System.out.print("Seleccione la opcion--> ");
                         valor2 = in.nextInt();
+                        System.out.println(moderno.obtenerLibrero());
+                        System.out.print("Digite el numero de libro a modificar --> "); 
+                        int n = in.nextInt();
                         switch(valor2) {
                             case 1: 
-                                moderno[n].asignarTitulo(String t);  
+                                System.out.print("Nuevo titulo --> ");
+                                String t = in.nextLine();
+                                moderno.asignarT(n, t);  
                                 break; 
                             case 2:
-                                moderno[n].asignarAutor(String a);  
+                                System.out.print("Nuevo autor --> ");
+                                String a = in.nextLine();
+                                moderno.asignarA(n, a);  
                                 break;
                             case 3:
-                                moderno[n].asignarNumeroDePaginas(int np);
+                                System.out.print("Nuevo numero de paginas --> ");
+                                int np = in.nextInt();
+                                moderno.asignarNp(n, np);
                                 break;
                             case 4:
-                                moderno[n].asignarFechaDePublicacion(int fp); 
+                                System.out.print("Nueva fecha de publicacion --> ");
+                                int fp = in.nextInt();
+                                moderno.asignarFp(n, fp); 
                                 break;
                             case 5:
                                 System.exit(0); 
                                 break;
                             default:
-                                System.out.println("Opcion invalida");
+                                System.out.print("Opcion invalida");
 					            break;
-                        */
                         }
-				case 3:
+                    }
+                case 3:
 				    moderno.llenarLibrero();   
                     System.out.println(moderno.obtenerLibrero());
                     break;
@@ -77,37 +85,38 @@ public class Main {
                     System.out.println(moderno.obtenerLibrero());
                     break; 
                 case 5:
-                    System.out.println("Titulo --> ");
+                    System.out.print("Titulo --> ");
                     String t = in.nextLine();
-                    System.out.println("Autor --> ");
+                    System.out.print("Autor --> ");
                     String a = in.nextLine();
-                    System.out.println("Numero de paginas --> ");
+                    System.out.print("Numero de paginas --> ");
                     int np = in.nextInt();
-                    System.out.println("Fecha de publicacion --> ");
+                    System.out.print("Fecha de publicacion --> ");
                     int fp = in.nextInt();
                     moderno.agregarLibro(t, a, np, fp); 
                     break;  
                 case 6:
+                    //moderno[i].eliminarLibro(n);  
                     System.out.println("hola"); 
                     break;  
                 case 7:
-                    System.out.println("hola"); 
+                    System.out.println("hola eliminar"); 
                     break;  
                 case 8:
+                    //moderno.ordenamientoPorNumeroDePaginas();
                     System.out.println("hola");                    
                     break; 
                 case 9:
+                    //moderno.ordenamientoPorFecha();
                     System.out.println("hola");
                     break;  
-				case 10:
+		    	case 10:
 					System.exit(0);
 					break;
-				default:
+			    default:
 					System.out.println("Opcion invalida");
 					break;
-			}
-
+            }
 		}
 	}
-
 }

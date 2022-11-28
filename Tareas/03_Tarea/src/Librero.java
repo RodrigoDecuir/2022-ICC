@@ -6,60 +6,62 @@
 import java.util.*;
 public class Librero {
     /*ATRIBUTOS*/
-    public Libro[] lili;//arreglo de libros 
+    private Libro[] coleccion;
     /*CONSTRUCTORES*/
     /**
      * Constructor para un librero vacio.
      */
-    public Librero() {
-        lili = new Libro[0]; 
+    public Librero(int espacio) {
+        coleccion = new Libro[espacio]; 
     }
     /*METODOS*/
     /*acceso*/
-/*
-    public static Libro obtenerLibrero(Libro[] librero) {
-        for(int i=0; i<librero.length; i++) {
-            return librero[i].toString();
-        }
+    public Libro[] obtenerLibrero() {
+        return coleccion;     
     } 
-*/
     /*modificacion*/
-    public static void asignarLibrero() { 
-                
+    public void asignarElementos() { 
+            
     }
+    
     /*llenar librero*/
-/*
-    public static void llenarLibrero() {
-        for(int i=0; i< ?; i++) {
-           librero[i] 
+    public void llenarLibrero() {
+        for(int i=0; i<coleccion.length; i++) {
+            coleccion[i].asignarTitulo("A cuerpo de gato");
+            coleccion[i].asignarAutor("Hiro Arikawa");
+            coleccion[i].asignarNumeroDePaginas(320);
+            coleccion[i].asignarFechaDePublicacion(2017);
         } 
     }
-*/
     /*vaciar librero*/
-/*
-    public static void vaciarLibrero() {
-        for(int i=0; i< ?; i++) {
-            librero[i]=;
+    public void vaciarLibrero() {
+        for(int i=0; i<coleccion.length; i++) {
+            coleccion[i].asignarTitulo(null);
+            coleccion[i].asignarAutor(null);
+            coleccion[i].asignarNumeroDePaginas(0);
+            coleccion[i].asignarFechaDePublicacion(0);
         }
     }
-*/
     /*agregar un libro*/
-/*
-    public static void agregarLibro() {
-        for(int i=0; i < librero.length; i++) {
-            if([i] != null) {
-                [i] = ...;
+    public void agregarLibro(String titulo, String autor, int numeroDePaginas, int fechaDePublicacion) {
+        for(int i=0; i < coleccion.length; i++) {
+            if(coleccion[i].obtenerTitulo() == null && coleccion[i].obtenerAutor() == null &&
+               coleccion[i].obtenerNumeroDePaginas() == 0 && coleccion[i].obtenerFechaDePublicacion() == 0) {
+                coleccion[i].asignarTitulo(titulo);
+                coleccion[i].asignarAutor(autor);
+                coleccion[i].asignarNumeroDePaginas(numeroDePaginas);
+                coleccion[i].asignarFechaDePublicacion(fechaDePublicacion);
                 break;
             }
         }
     }
-*/
     /*eliminar un libro*/
-/*
-    public static void eliminarLibro() {
-        [n] = null;
+    public void eliminarLibro(int n) {
+        coleccion[n].asignarTitulo(null);
+        coleccion[n].asignarAutor(null);
+        coleccion[n].asignarNumeroDePaginas(0);
+        coleccion[n].asignarFechaDePublicacion(0);
     }
-*/
     /*buscar un libro(recursivo)*/
     /**
     * Metodo recursivo para localizar un dato en un arreglo ordenado
@@ -70,7 +72,7 @@ public class Librero {
     * @return int -- posicion del elemento encontrado o -1 si no esta
     */
 /*
-    public int busquedaBinaria(int[] datos, int inicio, int fin, int buscado) {
+    public Libro busquedaBinaria(int[] datos, int inicio, int fin, int buscado) {
         int mitad = (inicio + fin)/2;
         if(inicio > fin) { 
             return false;
@@ -82,26 +84,16 @@ public class Librero {
             return mitad; //Lo encontro
         }
     }
-*/
     /*ordenar por numero de paginas(recursivo)*/
-/* 
     public int ordenamientoPorNumeroDePaginas() { 
+        return 10;  
     }
-*/
     /*ordenar por fecha de publicacion(recursivo)*/
-/*
     public int ordenamientoPorFecha() { 
+        return 10; 
     }
-*/
     /*toString*/
-/*
     public String toString() {
-        return ;
-    }
-*/
-    public static void main(String[]args) {
-        
-        Scanner in = new Scanner(System.in); 
-        
+        return "titulo y autor";
     }
 }  

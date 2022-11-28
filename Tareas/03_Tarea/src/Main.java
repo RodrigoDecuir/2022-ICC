@@ -4,17 +4,24 @@
  * @version 1.0
  */
 import java.util.Scanner;
+import java.util.Arrays;
 public class Main {
 
 	public static void main(String[]args) {
 		
-		Scanner entrada = new Scanner(System.in);
-	    Librero moderno = new Librero();	
+		Scanner in = new Scanner(System.in);
+	    Librero moderno = new Librero(15); //se crea un arreglo de libros [15]	
+        
+        //System.out.println("Cuantos libros piensas guardar en tu librero?");
+        //int espacio = in.nextInt(); 
+        //moderno.Librero(espacio);
+        
+        moderno.llenarLibrero();
+        //System.out.println(moderno.ordenamientoPorFecha()); 
+        System.out.println(moderno.obtenerLibrero());
+        //System.out.println(Arrays.toString(moderno));
 
-        System.out.println("Cuantos libros piensas guardar en tu librero?");
-        espacio = entrada.nextInt(); 
-        moderno.Librero(espacio);
-                
+        /*        
         int valor = 0;
 		while(valor != 10) {
 
@@ -33,34 +40,33 @@ public class Main {
 			System.out.print("Seleccione la opcion--> ");
 			valor = entrada.nextInt();
 
-			Mensaje msj = new Mensaje(entrada.nextLine());
-
 			switch(valor) {
 				case 1:
-					System.out.print("Introduce mensaje --> ");
-					msj = new Mensaje(entrada.nextLine());
-					c.agregarMensaje(msj);
-					break;
+					
+                    break;
 				case 2:
-					System.out.println("");
-					c.escucharMensajeReciente();
-					break;
+					
+                    break;
 				case 3:
-					System.out.println("");
-					c.escucharMensajes();
-					break;
+					
+                    break;
                 case 4:
-                
+                    
+                    break; 
                 case 5:
-
+                    
+                    break;  
                 case 6:
-
+                
+                    break;  
                 case 7:
-
+                
+                    break;  
                 case 8:
-
+                    
+                    break; 
                 case 9:
-
+                    break;  
 				case 10:
 					System.exit(0);
 					break;
@@ -70,7 +76,7 @@ public class Main {
 			}
 
 		}
-
+        */
 	}
 
 }

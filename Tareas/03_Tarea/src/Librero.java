@@ -5,6 +5,7 @@
  */
 import java.util.*;
 public class Librero {
+     
     /*ATRIBUTOS*/
     private Libro[] coleccion;
     /*CONSTRUCTORES*/
@@ -27,6 +28,7 @@ public class Librero {
     /*llenar librero*/
     public void llenarLibrero() {
         for(int i=0; i<coleccion.length; i++) {
+            coleccion[i] = new Libro(); 
             coleccion[i].asignarTitulo("A cuerpo de gato");
             coleccion[i].asignarAutor("Hiro Arikawa");
             coleccion[i].asignarNumeroDePaginas(320);
@@ -36,6 +38,7 @@ public class Librero {
     /*vaciar librero*/
     public void vaciarLibrero() {
         for(int i=0; i<coleccion.length; i++) {
+            coleccion[i] = new Libro();
             coleccion[i].asignarTitulo(null);
             coleccion[i].asignarAutor(null);
             coleccion[i].asignarNumeroDePaginas(0);
@@ -47,6 +50,7 @@ public class Librero {
         for(int i=0; i < coleccion.length; i++) {
             if(coleccion[i].obtenerTitulo() == null && coleccion[i].obtenerAutor() == null &&
                coleccion[i].obtenerNumeroDePaginas() == 0 && coleccion[i].obtenerFechaDePublicacion() == 0) {
+                coleccion[i] = new Libro();
                 coleccion[i].asignarTitulo(titulo);
                 coleccion[i].asignarAutor(autor);
                 coleccion[i].asignarNumeroDePaginas(numeroDePaginas);
@@ -71,8 +75,10 @@ public class Librero {
     * @param buscado -- elemento a buscar
     * @return int -- posicion del elemento encontrado o -1 si no esta
     */
+
+/*  public int busquedaBinaria(int[] datos, int inicio, int fin, int buscado) { */
+//    public Libro busquedaBinaria(Libro[] coleccion, int coleccion[0], int coleccion.lastIndexOf(), Libro buscado) { //debe de buscar libros, no enteros 
 /*
-    public Libro busquedaBinaria(int[] datos, int inicio, int fin, int buscado) {
         int mitad = (inicio + fin)/2;
         if(inicio > fin) { 
             return false;
@@ -84,6 +90,7 @@ public class Librero {
             return mitad; //Lo encontro
         }
     }
+*/
     /*ordenar por numero de paginas(recursivo)*/
     public int ordenamientoPorNumeroDePaginas() { 
         return 10;  

@@ -10,19 +10,13 @@ public class Main {
 	public static void main(String[]args) {
 		
 		Scanner in = new Scanner(System.in);
-	    Librero moderno = new Librero(15); //se crea un arreglo de libros [15]	
+	            
+        System.out.println("Cuantos libros piensas guardar en tu librero?");
+        int espacio = in.nextInt(); 
+        Librero moderno = new Librero(espacio);	
         
-        //System.out.println("Cuantos libros piensas guardar en tu librero?");
-        //int espacio = in.nextInt(); 
-        //moderno.Librero(espacio);
-        
-        moderno.llenarLibrero();
-        //System.out.println(moderno.ordenamientoPorFecha()); 
-        System.out.println(moderno.obtenerLibrero());
-        //System.out.println(Arrays.toString(moderno));
-
-        /*        
         int valor = 0;
+        int valor2 = 0;
 		while(valor != 10) {
 
 			System.out.println("\nLibrero");
@@ -38,34 +32,72 @@ public class Main {
             System.out.println("10. Salir");
 
 			System.out.print("Seleccione la opcion--> ");
-			valor = entrada.nextInt();
+			valor = in.nextInt();
 
 			switch(valor) {
 				case 1:
-					
+				    System.out.println(moderno.obtenerLibrero());	
                     break;
 				case 2:
-					
-                    break;
+                    while(valor != 5) {
+                        System.out.println("1. Modificar titulo");
+					    System.out.println("2. Modificar autor");
+                        System.out.println("3. Modificar numero de paginas");
+                        System.out.println("4. Modificar la fecha");
+                        System.out.println("5. Salir");
+                        System.out.println("Seleccione la opcion--> ");
+                        valor2 = in.nextInt();
+                        switch(valor2) {
+                            case 1: 
+                                moderno[n].asignarTitulo(String t);  
+                                break; 
+                            case 2:
+                                moderno[n].asignarAutor(String a);  
+                                break;
+                            case 3:
+                                moderno[n].asignarNumeroDePaginas(int np);
+                                break;
+                            case 4:
+                                moderno[n].asignarFechaDePublicacion(int fp); 
+                                break;
+                            case 5:
+                                System.exit(0); 
+                                break;
+                            default:
+                                System.out.println("Opcion invalida");
+					            break;
+                        */
+                        }
 				case 3:
-					
+				    moderno.llenarLibrero();   
+                    System.out.println(moderno.obtenerLibrero());
                     break;
                 case 4:
-                    
+                    moderno.vaciarLibrero(); 
+                    System.out.println(moderno.obtenerLibrero());
                     break; 
                 case 5:
-                    
+                    System.out.println("Titulo --> ");
+                    String t = in.nextLine();
+                    System.out.println("Autor --> ");
+                    String a = in.nextLine();
+                    System.out.println("Numero de paginas --> ");
+                    int np = in.nextInt();
+                    System.out.println("Fecha de publicacion --> ");
+                    int fp = in.nextInt();
+                    moderno.agregarLibro(t, a, np, fp); 
                     break;  
                 case 6:
-                
+                    System.out.println("hola"); 
                     break;  
                 case 7:
-                
+                    System.out.println("hola"); 
                     break;  
                 case 8:
-                    
+                    System.out.println("hola");                    
                     break; 
                 case 9:
+                    System.out.println("hola");
                     break;  
 				case 10:
 					System.exit(0);
@@ -76,7 +108,6 @@ public class Main {
 			}
 
 		}
-        */
 	}
 
 }

@@ -21,18 +21,32 @@ public class Librero {
         return coleccion;     
     } 
     /*modificacion*/
-    public void asignarElementos() { 
-            
+    /*public void asignarElementos() { 
+               
     }
-    
+    */
+    public void asignarT(int i, String titulo) {
+        coleccion[i].asignarTitulo(titulo);
+    }
+    public void asignarA(int i, String autor) {
+        coleccion[i].asignarAutor(autor);
+    }
+    public void asignarNumeroDePaginas(int i, int np) {
+        coleccion[i].asignarNumeroDePaginas(np);
+    }
+    public void asignarFechaDePublicacion(int i, int fp) {
+        coleccion[i].asignarFechaDePublicacion(fp);
+    }
+     
     /*llenar librero*/
     public void llenarLibrero() {
         for(int i=0; i<coleccion.length; i++) {
             coleccion[i] = new Libro(); 
-            coleccion[i].asignarTitulo("A cuerpo de gato");
+            /*coleccion[i].asignarTitulo("A cuerpo de gato");
             coleccion[i].asignarAutor("Hiro Arikawa");
             coleccion[i].asignarNumeroDePaginas(320);
             coleccion[i].asignarFechaDePublicacion(2017);
+            */
         } 
     }
     /*vaciar librero*/

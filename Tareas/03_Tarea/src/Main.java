@@ -94,16 +94,20 @@ public class Main {
                     librero.vaciarLibrero(); 
                     break; 
                 case 5:
-                    System.out.print("Titulo --> ");
-                    String auxiliar = in.nextLine();//sirve para leer la siguiente linea
-                    String t = in.nextLine(); 
-                    System.out.print("Autor --> ");
-                    String a = in.nextLine();
-                    System.out.print("Numero de paginas --> ");
-                    int np = in.nextInt();
-                    System.out.print("Fecha de publicacion --> ");
-                    int fp = in.nextInt();
-                    librero.agregarLibro(t, a, np, fp); 
+                    if(librero.vacio2() != 0) {
+                        System.out.print("Titulo --> ");
+                        String auxiliar = in.nextLine();//sirve para leer la siguiente linea
+                        String t = in.nextLine(); 
+                        System.out.print("Autor --> ");
+                        String a = in.nextLine();
+                        System.out.print("Numero de paginas --> ");
+                        int np = in.nextInt();
+                        System.out.print("Fecha de publicacion --> ");
+                        int fp = in.nextInt();
+                        librero.agregarLibro(t, a, np, fp); 
+                    } else {
+                        System.out.println("El librero se encuentra lleno");
+                    }
                     break;  
                 case 6:
                     int nu = 0;
@@ -119,15 +123,15 @@ public class Main {
                     } 
                     break;  
                 case 7:
-                    //librero.busquedaBinaria(); 
+                   // librero.busquedaBinaria(); 
                     System.out.println("hola eliminar"); 
                     break;  
                 case 8:
-                    //librero.ordenamientoPorNumeroDePaginas();
+                    //librero.ordenamientoPorNuPag();
                     System.out.println("hola");                    
                     break; 
                 case 9:
-                    //librero.ordenamientoPorFecha();
+                    //librero.ordenPorFecha();
                     System.out.println("hola");
                     break;  
 		    	case 10:

@@ -33,6 +33,7 @@ public class Librero {
     public void asignarFp(int i, int fp) {
         librero[i].asignarFechaDePublicacion(fp);
     }
+    /*revisar si se encuentra vacio*/
     public boolean vacio(int i) {
         boolean vacio = false; 
         if(librero[i] == null) {
@@ -40,6 +41,15 @@ public class Librero {
         }
         return vacio;
     }        
+    public int vacio2() {
+        int vacio2 = 0;
+        for(int i=0; i<librero.length; i++) {
+            if(librero[i] == null) {
+                vacio2 = i;
+            }
+        }
+        return vacio2;
+    }
     /*visualizar librero*/
     public void visualizar() {
         System.out.println("++++++++++");
@@ -70,6 +80,8 @@ public class Librero {
                 librero[i].asignarNumeroDePaginas(numeroDePaginas);
                 librero[i].asignarFechaDePublicacion(fechaDePublicacion);
                 break;
+            } else {
+                System.out.println("El librero se encuentra lleno");
             }
         }
     }
@@ -79,38 +91,46 @@ public class Librero {
     }
     /*buscar un libro(recursivo)*/
     /**
-    * Metodo recursivo para localizar un dato en un arreglo ordenado
+    * Metodo recursivo para localizar un dato en un arreglo ordenado, en este caso un libro
     * @param datos -- arreglo de enteros en donde esta el espacio de busqueda
     * @param inicio -- posicion inicial para la busqueda
     * @param fin -- posicion final para la busqueda
     * @param buscado -- elemento a buscar
     * @return int -- posicion del elemento encontrado o -1 si no esta
     */
-/*  public int busquedaBinaria(int[] datos, int inicio, int fin, int buscado) { */
-//    public Libro[] busquedaBinaria(Libro[] coleccion, int coleccion[0], int coleccion.lastIndexOf(), Libro buscado) { //debe de buscar libros, no enteros 
-/*
-        int mitad = (inicio + fin)/2;
+    public int busquedaBinaria(Libro[] datos, int inicio, int fin, Libro buscado) {
+        int mitad = (inicio + fin)/2; 
         if(inicio > fin) { 
             return false;
-        } else if(datos[mitad] < buscado) {
-            return busquedaBinaria(a, mitad + 1, fin, buscado);
-        } else if(datos[mitad] > buscado) {
-            return busquedaBinaria(a, inicio, mitad - 1, buscado);
+        } else if(Libro.compare(librero[mitad], buscado) == -1) {// <
+            return busquedaBinaria(/*a,*/ mitad + 1, fin, buscado);
+        } else if(Libro.compare(librero[mitad], buscado) == 1) {// >
+            return busquedaBinaria(/*a,*/ inicio, mitad - 1, buscado);
         } else {
             return mitad; //Lo encontro
         }
     }
-*/
     /*ordenar por numero de paginas(recursivo)*/
-    public int ordenamientoPorNumeroDePaginas() { 
-        return 10;  
+    public void ordenPorNumPag(Libro[] datos, int n) { 
+        
+        //ITERATIVO 
+        /*int n = datos.length;
+        for(int i=n-1; i>0; i--) {
+            for(int j=0; j<i; j++) {
+                if(datos[j] > datos[j+1]) {
+                    Libro temp = datos[j];
+                    datos[j] = datos[j+1];
+                    datos[j+1] = temp;
+                }
+            }
+       }
+       */
     }
     /*ordenar por fecha de publicacion(recursivo)*/
-    public int ordenamientoPorFecha() { 
-        return 10; 
+    public void ordenPorFecha() { 
     }
     /*toString*/
     public String toString() {
-        return "tuku wana min naku";
+        return "tuku wana min naku = que dice tu corazon?";
     }
 }  

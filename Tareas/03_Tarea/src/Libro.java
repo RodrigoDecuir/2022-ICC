@@ -1,5 +1,5 @@
 /**
- * Clase para...
+ * Clase para implementar las caracteristicas de un libro.
  * @author Rodrigo Andre Decuir Fuentes
  * @version 1.0
  */

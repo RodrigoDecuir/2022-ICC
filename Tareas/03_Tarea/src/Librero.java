@@ -1,47 +1,62 @@
 /**
- * Clase para...
+ * Clase para implementar la clase Libro.
  * @author Rodrigo Andre Decuir Fuentes
  * @version 1.0
  */
 import java.util.*;
+import java.util.Comparator;
 public class Librero {
-     
     /*ATRIBUTOS*/
-    private Libro[] coleccion;
+    private Libro[] librero;
     /*CONSTRUCTORES*/
     /**
      * Constructor para un librero vacio.
      */
-    public Librero(int espacio) {
-        coleccion = new Libro[espacio]; 
+    public Librero(int n) {
+        librero = new Libro[n]; 
     }
     /*METODOS*/
     /*acceso*/
     public Libro[] obtenerLibrero() {
-        return coleccion;     
+        return librero;     
     } 
     /*modificacion*/
     /*public void asignarElementos() { 
                
     }
     */
+    public boolean vacio(int i) {
+        boolean vacio = false; 
+        if(librero[i] == null) {
+            vacio = true;
+        }
+        return vacio;
+    }        
     public void asignarT(int i, String titulo) {
-        coleccion[i].asignarTitulo(titulo);
+        librero[i].asignarTitulo(titulo);
     }
     public void asignarA(int i, String autor) {
-        coleccion[i].asignarAutor(autor);
+        librero[i].asignarAutor(autor);
     }
     public void asignarNp(int i, int np) {
-        coleccion[i].asignarNumeroDePaginas(np);
+        librero[i].asignarNumeroDePaginas(np);
     }
     public void asignarFp(int i, int fp) {
-        coleccion[i].asignarFechaDePublicacion(fp);
+        librero[i].asignarFechaDePublicacion(fp);
     }
-     
+    
+    /*visualizar librero*/
+    public void visualizar() {
+        System.out.println("++++++++++");
+        for (int i=0; i<librero.length; i++) {
+            System.out.println("LIBRO: "+i+". \nCONTENIDO:\n"+librero[i]+",\n");
+        }
+        System.out.print("++++++++++");
+    } 
     /*llenar librero*/
     public void llenarLibrero() {
-        for(int i=0; i<coleccion.length; i++) {
-            coleccion[i] = new Libro(); 
+        for(int i=0; i<librero.length; i++) {
+            librero[i] = new Libro(); 
             /*coleccion[i].asignarTitulo("A cuerpo de gato");
             coleccion[i].asignarAutor("Hiro Arikawa");
             coleccion[i].asignarNumeroDePaginas(320);
@@ -51,34 +66,37 @@ public class Librero {
     }
     /*vaciar librero*/
     public void vaciarLibrero() {
-        for(int i=0; i<coleccion.length; i++) {
-            coleccion[i] = new Libro();
+        for(int i=0; i<librero.length; i++) {
+            librero[i] = null; 
+           /* coleccion[i] = new Libro();
             coleccion[i].asignarTitulo(null);
             coleccion[i].asignarAutor(null);
             coleccion[i].asignarNumeroDePaginas(0);
             coleccion[i].asignarFechaDePublicacion(0);
+           */ 
         }
     }
     /*agregar un libro*/
     public void agregarLibro(String titulo, String autor, int numeroDePaginas, int fechaDePublicacion) {
-        for(int i=0; i < coleccion.length; i++) {
-            if(coleccion[i].obtenerTitulo() == null && coleccion[i].obtenerAutor() == null &&
-               coleccion[i].obtenerNumeroDePaginas() == 0 && coleccion[i].obtenerFechaDePublicacion() == 0) {
-                coleccion[i] = new Libro();
-                coleccion[i].asignarTitulo(titulo);
-                coleccion[i].asignarAutor(autor);
-                coleccion[i].asignarNumeroDePaginas(numeroDePaginas);
-                coleccion[i].asignarFechaDePublicacion(fechaDePublicacion);
+        for(int i=0; i < librero.length; i++) {
+            if(librero[i] == null) {
+                librero[i] = new Libro();
+                librero[i].asignarTitulo(titulo);
+                librero[i].asignarAutor(autor);
+                librero[i].asignarNumeroDePaginas(numeroDePaginas);
+                librero[i].asignarFechaDePublicacion(fechaDePublicacion);
                 break;
             }
         }
     }
     /*eliminar un libro*/
     public void eliminarLibro(int n) {
-        coleccion[n].asignarTitulo(null);
+        librero[n] = null;
+       /* coleccion[n].asignarTitulo(null);
         coleccion[n].asignarAutor(null);
         coleccion[n].asignarNumeroDePaginas(0);
         coleccion[n].asignarFechaDePublicacion(0);
+       */ 
     }
     /*buscar un libro(recursivo)*/
     /**

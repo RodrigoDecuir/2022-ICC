@@ -89,8 +89,14 @@ public class Librero {
     public void eliminarLibro(int n) {
         librero[n] = null;
     }
-    public int comparar(libro[], fechaBuscada) {
-        librero[n].obtenerNumeroDePaginas();
+    public int comparar(Libro l1, Libro l2) {
+        if(l1.getNumeroDePaginas() == l2.getNumeroDePaginas()) {
+           return 0;
+        } else if(l1.getNumeroDePaginas() < getNumeroDePaginas()) { 
+            return -1;
+        } else {
+            return 1;
+        }
     } 
     /*buscar un libro(recursivo)*/
     /**
@@ -101,8 +107,8 @@ public class Librero {
     * @param buscado -- elemento a buscar
     * @return int -- posicion del elemento encontrado o -1 si no esta
     */
-  /*  public int busquedaBinaria(Libro[] datos, int inicio, int fin, Libro buscado) {//implementar compare, buscar libros no enteros
-
+  /*  public int busquedaBinaria(Libro[] datos, int inicio, int fin, Libro buscado) {
+   *  //implementar compare, buscar libros no enteros
         int mitad = (inicio + fin)/2; 
         if(inicio > fin) { 
             return false;
@@ -110,7 +116,6 @@ public class Librero {
             return busquedaBinaria(a, mitad + 1, fin, buscado);
         } else if(Libro.compare(librero[mitad], buscado) == 1) {// >
             return busquedaBinaria(a, inicio, mitad - 1, buscado); 
-
         } else {
             return mitad; //Lo encontro
         }
@@ -118,7 +123,6 @@ public class Librero {
    */
     
     /*ordenar por numero de paginas(recursivo)*/
-    
     public void ordenPorNumPag(Libro[] datos/*, int n*/) { 
         //para hacer un bubble recursivo necesito un metodo compare que compare los titulos, o fechas, 
         //o los numeros de paginas o autores, lo mas conveniente es comparar por fecha de publicacion 
@@ -134,14 +138,16 @@ public class Librero {
             }
         }
        */
-        int n = datos.length;
-        if(n == 0) {//en caso de que 
-           return librero[];
-        } //casoBase 
+        //RECURSIVO
+        //int n = datos.length;
+       // if(n == 0) {//en caso de que 
+       //    return librero[];
+       // } //casoBase 
         
     }
     /*ordenar por fecha de publicacion(recursivo)*/
     public void ordenPorFecha() { 
+        //RECURSIVO 
     }
     /*toString*/
     public String toString() {

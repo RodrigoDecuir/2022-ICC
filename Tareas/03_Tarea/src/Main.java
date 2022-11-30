@@ -26,9 +26,9 @@ public class Main {
 			System.out.println("4. Vaciar librero");
             System.out.println("5. Agregar un libro");
 		    System.out.println("6. Eliminar un libro");
-            System.out.println("7. Buscar un libro");
-            System.out.println("8. Ordenar libros por numero de paginas");
-            System.out.println("9. Ordenar libros por fecha");
+            System.out.println("7. Buscar un libro (no funciona)");
+            System.out.println("8. Ordenar libros por numero de paginas (no funciona)");
+            System.out.println("9. Ordenar libros por fecha (no funciona)");
             System.out.println("10. Salir");
 			System.out.print("Seleccione la opcion --> ");
 			v1 = in.nextInt();
@@ -123,16 +123,27 @@ public class Main {
                     } 
                     break;  
                 case 7:
-                   // librero.busquedaBinaria(); 
-                    System.out.println("hola eliminar"); 
+                    /* No supe resolverlo y no lo termiine por hacer una tarea de algebra, 
+                     * perdon ramses, estuvo interesante la tarea.
+                     */ 
+                    //System.out.println("Digita la fecha del libro a buscar--> ");
+                    //int fecha = in.nextInt();
+                    //librero.busquedaBinaria(0, librero.length, fecha); 
+                    //librero.visualizar(); 
                     break;  
                 case 8:
-                    //librero.ordenamientoPorNuPag();
-                    System.out.println("hola");                    
+                    /* No supe resolverlo y no lo termine por hacer una tarea de algebra, 
+                     * perdon ramses, estuvo interesante la tarea. 
+                     */
+                    //librero.ordenPorNumPag(0);
+                    System.out.println("+++");                    
                     break; 
                 case 9:
-                    //librero.ordenPorFecha();
-                    System.out.println("hola");
+                    /* No supe resolverlo y no lo termine por hacer una tarea de algebra, 
+                     * perdon ramses, estuvo interesante la tarea. 
+                     */
+                    //librero.ordenPorFecha(0);
+                    System.out.println("+++");
                     break;  
 		    	case 10:
 					System.exit(0);

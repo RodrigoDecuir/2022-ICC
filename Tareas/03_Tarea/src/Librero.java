@@ -89,15 +89,26 @@ public class Librero {
     public void eliminarLibro(int n) {
         librero[n] = null;
     }
-    public int comparar(Libro l1, Libro l2) {
-        if(l1.getNumeroDePaginas() == l2.getNumeroDePaginas()) {
+    /*compara numero de paginas*/
+    public int compararPaginas(int ni, int numPag) {
+        if(librero[ni].obtenerNumeroDePaginas() == numPag) {
            return 0;
-        } else if(l1.getNumeroDePaginas() < getNumeroDePaginas()) { 
+        } else if(librero[ni].obtenerNumeroDePaginas() < numPag) { 
             return -1;
-        } else {
+        } else {//caso: > (mayor estricto)
             return 1;
         }
     } 
+    /*compara fecha de publicacion*/
+    public int compararFecha(int n, int fecha) {
+        if(librero[n].obtenerFechaDePublicacion() == fecha) {
+            return 0;
+        } else if(librero[n].obtenerFechaDePublicacion() < fecha) {
+            return -1;
+        } else {//caso: > (mayor estricto) 
+            return 1;
+        } 
+    }
     /*buscar un libro(recursivo)*/
     /**
     * Metodo recursivo para localizar un dato en un arreglo ordenado, en este caso un libro
@@ -107,37 +118,35 @@ public class Librero {
     * @param buscado -- elemento a buscar
     * @return int -- posicion del elemento encontrado o -1 si no esta
     */
-  /*  public int busquedaBinaria(Libro[] datos, int inicio, int fin, Libro buscado) {
-   *  //implementar compare, buscar libros no enteros
+    public int busquedaBinaria(/*Libro[] datos, */int n, int inicio, int fin, int buscado) {
         int mitad = (inicio + fin)/2; 
-        if(inicio > fin) { 
-            return false;
-        } else if(Libro.compare(librero[mitad], buscado) == -1) {// <
-            return busquedaBinaria(a, mitad + 1, fin, buscado);
-        } else if(Libro.compare(librero[mitad], buscado) == 1) {// >
-            return busquedaBinaria(a, inicio, mitad - 1, buscado); 
+       /* if(inicio > fin) { 
+            return 0;
+        } else if(Librero.compararFecha(n, buscado) == -1) {// <
+            return busquedaBinaria(n, mitad + 1, fin, buscado);
+        } else if(Librero.compararFecha(n, buscado) == 1) {// >
+            return busquedaBinaria(n, inicio, mitad - 1, buscado); 
         } else {
             return mitad; //Lo encontro
         }
+       */
+        return 12;
     }
-   */
-    
     /*ordenar por numero de paginas(recursivo)*/
-    public void ordenPorNumPag(Libro[] datos/*, int n*/) { 
-        //para hacer un bubble recursivo necesito un metodo compare que compare los titulos, o fechas, 
-        //o los numeros de paginas o autores, lo mas conveniente es comparar por fecha de publicacion 
+    public void ordenPorNumPag(int ne) { 
         //ITERATIVO 
-        /*int n = datos.length;
-        for(int i=n-1; i>0; i--) {
+        ne = librero.length;
+        for(int i=ne-1; i>0; i--) {
             for(int j=0; j<i; j++) {
-                if(datos[j] > datos[j+1]) {
-                    Libro temp = datos[j];
-                    datos[j] = datos[j+1];
-                    datos[j+1] = temp;
+                if(compararPaginas(i, librero.length) == 1 && librero[j] != null) {
+                    Libro temp = librero[ne];
+                    librero[ne] = librero[ne+1];
+                    librero[ne+1] = temp;
+                } else {
                 }
             }
         }
-       */
+       
         //RECURSIVO
         //int n = datos.length;
        // if(n == 0) {//en caso de que 

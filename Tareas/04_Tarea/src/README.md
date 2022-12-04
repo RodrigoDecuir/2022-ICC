@@ -4,7 +4,7 @@ Introducción a Ciencias de la Computación
 Tarea 04
 -----------
 
-### Fecha de entrega: viernes 09 de noviembre, 2022
+### Fecha de entrega: viernes 09 de diciembre, 2022
 
 * *Rodrigo André Decuir Fuentes*
 * *320022711*

@@ -3,7 +3,7 @@
  * @author Rodrigo Andre Decuir Fuentes
  * @version 1.0
  */
-public class Boleto {
+public abstract class Boleto {
     /*ATRIBUTOS*/
     String evento = "Diego Puente presenta: La ultima noche antes de decirte adios";
     String fecha = "3 de febrero 2023";

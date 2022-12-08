@@ -20,6 +20,14 @@ public class PruebaArray {
         System.out.println("Arreglo 3: " + array3);
         System.out.println("Arreglo 4: " + array4);
 
+        int[] g = array1.obtenerEnteros();
+
+        System.out.println("Arreglo 1: " + array1);
+        array2.setEnteros(g);
+        System.out.println("Arreglo 2: " + array2);
+        System.out.println("Arreglo 3: " + array3);
+        System.out.println("Arreglo 4: " + array4);
+
         System.out.println();
 
         System.out.println("Llenamos el arreglo 1 y 4: ");

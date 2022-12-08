@@ -187,11 +187,29 @@ public class Operaciones {
       * @param n numero entero
       * @return suma de los digitos de n
       */
-    private double sumaDigitosR(int n) {
+    private double sumaDigitosR(int n) { 
         if (n == 0) {
             return 0;    // Caso Base
         } else {
             return (n % 10) + this.sumaDigitosR(n / 10);   // Caso Recursivo
+        }
+    }
+
+    // Function to return sum of
+    // harmonic series
+    public double sum(int n) {
+        double i, s = 0.0;
+        for (i = 1; i <= n; i++) {
+            s = s + 1/i;
+        }
+        return s;
+    }
+
+    public static double sumR(int n){
+        if(n <= 1) {
+            return 1;
+        } else {
+            return ((double) 1/n) + sumR(n - 1);
         }
     }
 
@@ -347,10 +365,12 @@ public class Operaciones {
             System.out.println("Suma Digitos Recursivo: " + p.sumaDigitosR(234));
             System.out.println("MCD Recursivo: " + p.mcdR(45,120));
             System.out.println("mcm Recursivo: " + p.mcmR(45,120));
-            System.out.println("Binario Recursivo: " + p.binarioR(15));
+            System.out.println("Binario Recursivo: " + p.binarioR(2));
             System.out.println("Raiz Recursiva: " + p.raizR(56));
             System.out.println("Armstrong Recursivo: " + p.armstrongR(371));
             System.out.println("Perfecto Recursivo: " + p.perfectoR(6));
+            System.out.println("Harmonico: " + p.sum(6));
+            System.out.println("Harmonico R: " + p.sumR(6));
         } catch (DivisionEntreCeroException e) {
             System.out.println(e);
         } catch (NumeroNegativoException e) {

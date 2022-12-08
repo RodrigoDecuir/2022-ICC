@@ -36,6 +36,10 @@ public class Array {
     return enteros;
   }
 
+  public void setEnteros(int[] newEnteros) {
+    enteros = newEnteros;
+  }
+
   /**
     * Metodo para llenar el arreglo hasta un tope
     * @param tope - tope hasta donde se llena en arreglo

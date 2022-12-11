@@ -3,5 +3,5 @@
  * @author Rodrigo Andre Decuir Fuentes
  * @version 1.0
  */
-public class BoletosParaPersonasDeTerceraEdad extends Boleto {
+public class BoletosDePrepago extends Boleto {
 }  

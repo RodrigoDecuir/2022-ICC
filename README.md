@@ -1,4 +1,4 @@
-# 2022_ICC
+# 2022-ICC
 ## Introducción a Ciencias de la Computación
 ### Instructores:
 * Cinthia Rodríguez Maya

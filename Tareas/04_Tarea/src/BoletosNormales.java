@@ -1,5 +1,5 @@
 /**
- * Clase para....
+ * Clase para determinar los boletos normales.
  * @author Rodrigo Andre Decuir Fuentes
  * @version 1.0
  */

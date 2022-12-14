@@ -1,6 +1,7 @@
 /**
- * Clase para..
- * @author
+ * Clase para...
+ * @author Rodrigo Andre Decuir Fuentes
+ * @version 1.0
  */
 
 import java.util.*;

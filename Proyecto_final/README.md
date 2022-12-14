@@ -76,18 +76,18 @@ Ejemplo:
 
 VUELO DE IDA
 Selecciona uno de los asientos disponibles:
-_1_. A1.
-_2_. A2.
-_3_. A7.
+- 1. A1.
+- 2. A2.
+- 3. A7.
 …..
 _44_. A49.
 VUELO DE REGRESO
 Selecciona uno de los asientos disponibles:
-_1_. A10
-_2_. A22
-_3_. A23
+- 1. A10
+- 2. A22
+- 3. A23
 …
-_30_. A50
+- 30. A50
 
 Nota: Si el cliente necesitará ‘k’ boletos, pero sólo quedan ‘m’ asiento disponibles, donde
 'm' es menor a 'k', se le notifica al cliente que no puede agregar vuelos y el servicio de avión no procede.
@@ -145,17 +145,17 @@ si el asiento está ocupado o disponible.
 Ejemplo:
 
 VUELO DE IDA:
-_1_. Disponible.
-_2_. Disponible.
-_3_. Ocupado.
+- 1. Disponible.
+- 2. Disponible.
+- 3. Ocupado.
 …..
-_50_. Disponible.
+- 50. Disponible.
 VUELO DE REGRESO:
-_1_. Ocupado.
-_2_. Disponible.
-_3_. Disponible.
+- 1. Ocupado.
+- 2. Disponible.
+- 3. Disponible.
 …..
-_50_. Disponible.
+- 50. Disponible.
 --
 
 *Opción 7* - Termina el programa.

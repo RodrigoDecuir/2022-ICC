@@ -83,7 +83,8 @@ Selecciona uno de los asientos disponibles:
 …..
 
 _44_. A49.
-VUELO DE REGRESO
+    
+    VUELO DE REGRESO
 
 Selecciona uno de los asientos disponibles:
  1. A10

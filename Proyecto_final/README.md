@@ -84,6 +84,7 @@ Selecciona uno de los asientos disponibles:
 
 _44_. A49.
 VUELO DE REGRESO
+
 Selecciona uno de los asientos disponibles:
  1. A10
  2. A22
@@ -155,9 +156,9 @@ VUELO DE IDA:
 
 …..
 
- 50. Disponible.
-VUELO DE REGRESO:
+_50_. Disponible.
 
+     VUELO DE REGRESO:
 
  1. Ocupado.
  2. Disponible.

@@ -76,7 +76,7 @@ Ejemplo:
 
 VUELO DE IDA
 Selecciona uno de los asientos disponibles:
-- 1. A1.
+- \1.\ A1.
 - 2. A2.
 - 3. A7.
 …..

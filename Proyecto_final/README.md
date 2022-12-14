@@ -47,6 +47,7 @@ El costo de incluir boletos de avión al viaje es de $4000 por persona y es vuel
 Funcionamiento del programa:
 Al ejecutarse el programa se deberá mostrar el siguiente menú:
 —--------------------------------------------------------------------------------------------
+
 BIENVENIDO A LA AGENCIA PUMA-TOURS
 Selecciona una de las siguientes opciones:
 1. Crear reservación para el hotel “Tropical”.
@@ -155,7 +156,10 @@ VUELO DE REGRESO:
 3. Disponible.
 …..
 50. Disponible.
-Opción 7 - Termina el programa.
+--
+—----------------------------------------------------------------------------------------------
+
+*Opción 7* - Termina el programa.
 
 Usa excepciones sólo para evitar que no se introduzcan datos inconsistentes desde el teclado y que
 el programa ‘se caiga’, no es necesario que crees nuevas.

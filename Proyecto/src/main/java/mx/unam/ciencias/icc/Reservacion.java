@@ -16,16 +16,23 @@ public class Reservacion {
     Hotel ai;//Avion Ida
     Hotel ar;//Avion Regreso
     //METHODS
-    /*public Reservacion() {
-        for(int i; i<avionIda.length; i++){
+    //se llenan los arreglos
+    public Reservacion(Hotel[] avionIda, Hotel[] avionRegreso, Hotel[] habitacionSencilla, Hotel[] habitacionFamiliar) {
+        for(int i=0; i<avionIda.length; i++) {
             avionIda[i] = new Hotel(0,false,"ida");
         }
-        for(int i; i<avionIda.length; i++){
+        for(int i=0; i<avionRegreso.length; i++) {
             avionRegreso[i] = new Hotel(0,false,"regreso");
         }
+        for(int i=0; i<habitacionSencilla.length; i++) {
+            habitacionSencilla[i] = new Hotel(0, false, "sencilla");
+        }
+        for(int i=0; i<habitacionFamiliar.length; i++) {
+            habitacionFamiliar[i] = new Hotel(0, false, "familiar");
+        }
     }
-    */
     public Reservacion(String nombreTitular, int numeroAcompaniantes, Hotel hs, Hotel hf, Hotel ai, Hotel ar){
+        //recibe solo objetos de tipo hotel y ya con eso se puede obtener la informacion que necesito
         this.id = setId();
         this.nombreTitular = nombreTitular;
         this.numeroAcompaniantes = numeroAcompaniantes;

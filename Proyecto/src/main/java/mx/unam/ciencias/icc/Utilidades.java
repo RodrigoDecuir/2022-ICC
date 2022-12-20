@@ -12,16 +12,14 @@ import java.io.IOException;
 public class Utilidades {
 	//modificar para que funcione con objetos de tipo hotel
 	//ya con esto recuperamos el estado de nuestros arreglos
-	//Hotel hotel = new Hotel();
-
+	Hotel[] arreglo = new Hotel[0];
 	/**
 	  * Metodo para agregar un elemento al arreglo
-	  * @param elemento. elemento que vamos a agregar
+	  * @param elemento elemento que vamos a agregar
 	  * @return Arreglo con el elemento insertado
 	*/
-	/*
-	public Libro[] agregarAArregloLibro(Hotel elemento){
-		Libro[] nuevo = new Libro[arreglo.length+1];
+	public Hotel[] agregarArregloHotel(Hotel elemento) {
+		Hotel[] nuevo = new Hotel[arreglo.length+1];
         for(int i=0; i<arreglo.length; i++){
         	nuevo[i] = arreglo[i];
         }
@@ -29,14 +27,12 @@ public class Utilidades {
         arreglo = nuevo;
         return arreglo;
 	}
-	 */
 	/**
 	  * Metodo para leer objetos de un archivo de texto
-	  * @param ruta_del_archivo. ruta del archivo donde estan guardado los objetos
+	  * @param ruta_del_archivo ruta del archivo donde estan guardado los objetos
 	  * @return Arreglo con todos los elementos guardados en el archivo de texto
 	*/
-	/*
-	public Libro[] leerObjetosArchivoLibro(String ruta_del_archivo){
+	public Hotel[] leerObjetosArchivoHotel(String ruta_del_archivo) {
 		ObjectInputStream lect = null;
 		 // Hacemos un ciclo para poder guardar en nuestro arreglo
 		 // todos los objetos del .txt
@@ -44,10 +40,9 @@ public class Utilidades {
 			lect = new ObjectInputStream(new FileInputStream(ruta_del_archivo));
 			Object objeto;
 		do{
-			
 			objeto = lect.readObject();
 			if (objeto != null){
-				agregarAArregloLibro((Libro) objeto);
+				agregarArregloHotel((Hotel) objeto);
 			}
 		}while (objeto != null);
 
@@ -62,15 +57,13 @@ public class Utilidades {
     	}
     	return arreglo;
 	}
-	 */
 
 	/**
 	  * Metodo para leer objetos de un archivo de texto
-	  * @param ruta_del_archivo. ruta del archivo donde guardaremos los objetos
-	  * @param arreglo. Arreglo que contiene los objetos que guardaremos
+	  * @param ruta_del_archivo ruta del archivo donde guardaremos los objetos
+	  * @param arreglo Arreglo que contiene los objetos que guardaremos
 	*/
-	/*
-	public void EscribirObjetosArchivo(String ruta_del_archivo, Libro[] arreglo){
+	public void EscribirObjetosArchivo(String ruta_del_archivo, Hotel[] arreglo){
 		ObjectOutputStream escritor = null;
 		try{
 			escritor = new ObjectOutputStream(new FileOutputStream(ruta_del_archivo));
@@ -83,5 +76,4 @@ public class Utilidades {
 			try{escritor.close();}catch(IOException e){}
 		}
 	}
-	 */
 }

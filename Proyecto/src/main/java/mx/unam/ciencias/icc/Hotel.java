@@ -10,13 +10,11 @@ public class Hotel {
     private boolean ocupado;
     private String tipoDeReservacion;
     //METHODS
-    /*
     public Hotel() {
         precio = 0;
         ocupado = false;
         tipoDeReservacion = "";
     }
-     */
     public Hotel(double precio, boolean ocupado, String tipoDeReservacion) {
         this.precio = precio;
         this.ocupado = ocupado;

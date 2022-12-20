@@ -16,6 +16,15 @@ public class Reservacion {
     Hotel ai;//Avion Ida
     Hotel ar;//Avion Regreso
     //METHODS
+    /*public Reservacion() {
+        for(int i; i<avionIda.length; i++){
+            avionIda[i] = new Hotel(0,false,"ida");
+        }
+        for(int i; i<avionIda.length; i++){
+            avionRegreso[i] = new Hotel(0,false,"regreso");
+        }
+    }
+    */
     public Reservacion(String nombreTitular, int numeroAcompaniantes, Hotel hs, Hotel hf, Hotel ai, Hotel ar){
         this.id = setId();
         this.nombreTitular = nombreTitular;

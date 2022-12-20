@@ -3,6 +3,7 @@
  * @author Rodrigo Andre Decuir Fuentes
  * @version 1.0
  */
+package mx.unam.ciencias.icc;
 import java.io.ObjectOutputStream;
 import java.io.ObjectInputStream;
 import java.io.FileInputStream;
@@ -11,14 +12,15 @@ import java.io.IOException;
 public class Utilidades {
 	//modificar para que funcione con objetos de tipo hotel
 	//ya con esto recuperamos el estado de nuestros arreglos
-	Libro[] arreglo = new Libro[0];
+	//Hotel hotel = new Hotel();
 
 	/**
 	  * Metodo para agregar un elemento al arreglo
 	  * @param elemento. elemento que vamos a agregar
 	  * @return Arreglo con el elemento insertado
 	*/
-	public Libro[] agregarAArregloLibro(Libro elemento){
+	/*
+	public Libro[] agregarAArregloLibro(Hotel elemento){
 		Libro[] nuevo = new Libro[arreglo.length+1];
         for(int i=0; i<arreglo.length; i++){
         	nuevo[i] = arreglo[i];
@@ -27,17 +29,17 @@ public class Utilidades {
         arreglo = nuevo;
         return arreglo;
 	}
+	 */
 	/**
 	  * Metodo para leer objetos de un archivo de texto
 	  * @param ruta_del_archivo. ruta del archivo donde estan guardado los objetos
 	  * @return Arreglo con todos los elementos guardados en el archivo de texto
 	*/
+	/*
 	public Libro[] leerObjetosArchivoLibro(String ruta_del_archivo){
 		ObjectInputStream lect = null;
-		/** 
-		 * Hacemos un ciclo para poder guardar en nuestro arreglo
-		 * todos los objetos del .txt
-    	 */
+		 // Hacemos un ciclo para poder guardar en nuestro arreglo
+		 // todos los objetos del .txt
 		try{
 			lect = new ObjectInputStream(new FileInputStream(ruta_del_archivo));
 			Object objeto;
@@ -60,12 +62,14 @@ public class Utilidades {
     	}
     	return arreglo;
 	}
+	 */
 
 	/**
 	  * Metodo para leer objetos de un archivo de texto
 	  * @param ruta_del_archivo. ruta del archivo donde guardaremos los objetos
 	  * @param arreglo. Arreglo que contiene los objetos que guardaremos
 	*/
+	/*
 	public void EscribirObjetosArchivo(String ruta_del_archivo, Libro[] arreglo){
 		ObjectOutputStream escritor = null;
 		try{
@@ -74,10 +78,10 @@ public class Utilidades {
 				escritor.writeObject(arreglo[i]);
 			}
 		}catch(IOException e){
-			System.out.println("Error en la grbacion: "+e);
+			System.out.println("Error en la grabacion: " + e);
 		}finally{
 			try{escritor.close();}catch(IOException e){}
 		}
 	}
-
+	 */
 }

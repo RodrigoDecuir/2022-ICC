@@ -11,15 +11,19 @@ public class Reservacion {
     private String id;
     private String nombreTitular;
     private int numeroAcompaniantes;
-    Hotel[] hs = new Hotel[5];//Habitacion Sencilla
-    Hotel[] hf = new Hotel[10];//Habitacion Familiar
-    Hotel[] ai = new Hotel[50];//Avion Ida
-    Hotel[] ar = new Hotel[50];//Avion Regreso
+    Hotel hs;//Habitacion Sencilla
+    Hotel hf;//Habitacion Familiar
+    Hotel ai;//Avion Ida
+    Hotel ar;//Avion Regreso
     //METHODS
-    public Reservacion(String nombreTitular, int numeroAcompaniantes, Hotel[] hs, Hotel[] hf, Hotel[] ai, Hotel[] ar){
+    public Reservacion(String nombreTitular, int numeroAcompaniantes, Hotel hs, Hotel hf, Hotel ai, Hotel ar){
         this.id = setId();
         this.nombreTitular = nombreTitular;
         this.numeroAcompaniantes = numeroAcompaniantes;
+        this.hs = hs;
+        this.hf = hf;
+        this.ai = ai;
+        this.ar = ar;
     }
     public String getId() {
        return id;

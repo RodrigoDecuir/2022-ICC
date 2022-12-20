@@ -1,5 +1,5 @@
 /**
- * Clase padre para simplificar las clases Avion, HabitacionSencilla y HabitacionFamiliar.
+ * Clase padre para simplificar las clases AvionIda, AvionRegreso, HabitacionSencilla y HabitacionFamiliar.
  * @author Rodrigo Andre Decuir Fuentes
  * @version 1.0
  */

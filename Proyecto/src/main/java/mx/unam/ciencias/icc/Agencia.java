@@ -255,14 +255,14 @@ public class Agencia {
         }
         aux[aux.length-1] = miReservacion;
         reservaciones2 = aux;
-        return "hola"/*reservaciones2[1].getId()*/;
+        return "hola";
     }
 
     /**
      * Metodo para cancelar una reservacion .
      */
     public static void cancelarReservacion() {
-        System.out.print("Ingrese el numero de identificacion de la reservacion --> ");
+        System.out.print("\nIngrese el numero de identificacion de la reservacion --> ");
         String numId = in.nextLine();
         for(int i = 0; i<reservaciones2.length; i++) {
             if(reservaciones2[i] != null){
@@ -278,7 +278,7 @@ public class Agencia {
      * @return los datos de la reservacion dependiendo del id de reservacion ingresado.
      */
     public static String verMiReservacion() {
-        System.out.print("Ingrese el numero de identificacion de la reservacion --> ");
+        System.out.print("\nIngrese el numero de identificacion de la reservacion --> ");
         String numId = in.nextLine();
         for(int i = 0; i<reservaciones2.length; i++) {
             if (reservaciones2[i] != null) {
@@ -416,7 +416,6 @@ public class Agencia {
                 e.printStackTrace();
                 }
                  */
-                //guardamos los elementos de nuestros arreglos
                 break;
             default:
                 System.out.println("Opcion invalida. Ingresa un numero del 1 al 7.");

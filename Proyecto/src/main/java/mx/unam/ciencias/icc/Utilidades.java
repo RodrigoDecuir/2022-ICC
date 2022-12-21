@@ -10,9 +10,9 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 public class Utilidades {
-	//modificar para que funcione con objetos de tipo hotel
-	//ya con esto recuperamos el estado de nuestros arreglos
+	//ATTRIBUTES
 	Hotel[] arreglo = new Hotel[0];
+	//METHODS
 	/**
 	  * Metodo para agregar un elemento al arreglo
 	  * @param elemento elemento que vamos a agregar
@@ -27,10 +27,11 @@ public class Utilidades {
         arreglo = nuevo;
         return arreglo;
 	}
+
 	/**
-	  * Metodo para leer objetos de un archivo de texto
-	  * @param ruta_del_archivo ruta del archivo donde estan guardado los objetos
-	  * @return Arreglo con todos los elementos guardados en el archivo de texto
+	  * Metodo para leer objetos de un archivo de texto.
+	  * @param ruta_del_archivo ruta del archivo donde estan guardado los objetos.
+	  * @return Arreglo con todos los elementos guardados en el archivo de texto.
 	*/
 	public Hotel[] leerObjetosArchivoHotel(String ruta_del_archivo) {
 		ObjectInputStream lect = null;
@@ -59,9 +60,9 @@ public class Utilidades {
 	}
 
 	/**
-	  * Metodo para leer objetos de un archivo de texto
-	  * @param ruta_del_archivo ruta del archivo donde guardaremos los objetos
-	  * @param arreglo Arreglo que contiene los objetos que guardaremos
+	  * Metodo para leer objetos de un archivo de texto.
+	  * @param ruta_del_archivo ruta del archivo donde guardaremos los objetos.
+	  * @param arreglo Arreglo que contiene los objetos que guardaremos.
 	*/
 	public void EscribirObjetosArchivo(String ruta_del_archivo, Hotel[] arreglo){
 		ObjectOutputStream escritor = null;
